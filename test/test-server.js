@@ -2,7 +2,7 @@
 
 const test = require('tap').test;
 
-const osc = require('../lib');
+const osc = require('../cjs');
 
 test('server: create and close', (t) => {
   t.plan(1);

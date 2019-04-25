@@ -2,18 +2,18 @@
   "name": "node-osc",
   "description": "pyOSC inspired library",
   "version": "5.0.0",
-  "main": "lib/index.js",
+  "main": "lib/index.mjs",
   "author": {
     "name": "Myles Borins",
     "email": "myles.borins@gmail.com"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "license": "LGPL-2.1",
   "scripts": {
     "test": "npm run lint && npm run tap",
-    "tap": "tap test/*.js",
+    "tap": "tap --node-arg=--experimental-modules test/*{.js,.mjs}",
     "coverage": "npm run tap -- --coverage",
     "coverage-html": "npm run tap -- --coverage-report=html",
     "lint": "eslint **/*.js"

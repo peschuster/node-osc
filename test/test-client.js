@@ -2,7 +2,7 @@
 
 const test = require('tap').test;
 
-const osc = require('../lib');
+const osc = require('../cjs');
 
 test('client: with array', (t) => {
   const oscServer = new osc.Server(3333, '0.0.0.0');

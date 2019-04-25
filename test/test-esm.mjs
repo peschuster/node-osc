@@ -1,8 +1,9 @@
 'use strict';
 
-const test = require('tap').test;
+import tap from 'tap';
+import osc from '../lib/index.mjs'
 
-const osc = require('../cjs');
+const test = tap.test;
 
 test('osc: argument message no callback', (t) => {
   const oscServer = new osc.Server(3333, '0.0.0.0');
