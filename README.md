@@ -8,6 +8,10 @@ Install using npm
 npm install node-osc
 ```
 
+## Fork
+
+Adds support for long data types (h tag).
+
 ## Example
 
 ### Sending OSC messages:
